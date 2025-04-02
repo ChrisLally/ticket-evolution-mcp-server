@@ -1,0 +1,20 @@
+{
+      "name": "ticket-evolution-mcp-server",
+      "version": "1.0.0",
+      "type": "module",
+      "main": "src/index.js",
+      "bin": {
+        "ticket-evolution-mcp": "src/index.js"
+      },
+      "scripts": {
+        "start": "node src/index.js",
+        "dev": "node --watch src/index.js",
+        "inspect": "npx --yes @modelcontextprotocol/inspector node src/index.js"
+      },
+      "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.0",
+        "crypto": "^1.0.1",
+        "node-fetch": "^3.3.2",
+        "zod": "^3.22.4"
+      }
+    }
